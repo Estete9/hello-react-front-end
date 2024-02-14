@@ -1,7 +1,7 @@
-import { useDispatch, useSelector } from "react-redux";
-import React, {useEffect} from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
 
-import { fetchRandomGreeting } from "../redux/features/greetings/greetingSlice";
+import { fetchRandomGreeting } from '../redux/features/greetings/greetingSlice';
 
 function Greeting() {
   const dispatch = useDispatch();
@@ -12,29 +12,32 @@ function Greeting() {
   }));
 
   useEffect(() => {
-    if(isLoading) {
-      dispatch(fetchRandomGreeting())
+    if (isLoading) {
+      dispatch(fetchRandomGreeting());
     }
-  }, [isLoading, dispatch])
+  }, [isLoading, dispatch]);
 
-  if(isLoading) {
-     return <div>Fetching greeting...</div>;
+  if (isLoading) {
+    return <div>Fetching greeting...</div>;
   }
 
-  if(error) {
+  if (error) {
     return <div>{`We encountered an error: ${JSON.stringify(error)}`}</div>;
   }
 
-  if(!greeting) {
+  if (!greeting) {
     return <h2>There are no greetings today, try again later</h2>;
-  } else {
-    return (<div>
-      <h2>Today's greeting</h2>
+  }
+  return (
+    <div>
+      <h2>Today&apos;s greeting</h2>
       <strong>
         <p>{greeting.greeting}</p>
       </strong>
-    </div>);
-  }
-};
+    </div>
+  );
+}
 
 export default Greeting;
+
+
