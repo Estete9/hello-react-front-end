@@ -8,7 +8,8 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Hello Rails Frontend](#-recipe-app-)
+- [📖 Hello Rails Frontend](#-frontend-project-)
+- - [📖 Hello Rails Backend API](#-backend-project-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -87,6 +88,9 @@ The **Hello Rails Frontend** is a React app that fetches data from an external A
 Check the live demo [here](https://wheres-the-money.onrender.com)
 
 Check the documentation recording [here](https://www.loom.com/share/2452b6b963424aca8b3f9eec7a48f281)  -->
+
+# 📖 Hello Rails Backend API (Required) <a name="backend-project"></a>
+Please clone this [Backend repo](https://github.com/Estete9/hello-rails-back-end.git)
 
 <!-- GETTING STARTED -->
 
